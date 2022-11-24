@@ -1,0 +1,15 @@
+server.port: 8080
+spring:
+  application.name: carpark
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: 'health,mappings,loggers,info'
